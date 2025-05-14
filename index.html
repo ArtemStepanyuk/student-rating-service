@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — Student Rating Service</title>
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Rating Service</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <img src="images/OIG3.jpg" alt="Graduation Cap Icon" class="logo">
+    <img src="images/OIG3.jpg" class="logo" alt="Logo" />
     <h1>Student Rating Service</h1>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="logout.html">Logout</a>
-      <a href="users.html">Users</a>
-      <a href="ratings.html">Ratings</a>
-      <a href="top-students.html">Top Students</a>
-    </nav>
+    <nav id="main-nav" class="site-nav hidden"></nav>
   </header>
 
   <main>
-    <section class="welcome">
-      <h2>Welcome!</h2>
-      <p>Use the menu above to navigate.</p>
-    </section>
+    <div id="app"></div>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2025 Web Development Department</p>
   </footer>
+
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
