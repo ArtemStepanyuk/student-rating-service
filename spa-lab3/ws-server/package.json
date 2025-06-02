@@ -1,0 +1,12 @@
+{
+  "name": "student-rating-ws-server",
+  "version": "1.0.0",
+  "description": "Simple WebSocket server for the SPA Student-Rating app",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "websocket": "^1.0.33"
+  }
+}

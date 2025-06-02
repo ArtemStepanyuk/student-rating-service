@@ -13,12 +13,12 @@ import RatingList from '../components/Ratings/RatingList';
 import RatingForm from '../components/Ratings/RatingForm';
 
 import TopList from '../components/Top/TopList';
+import ChatPopup from '../components/ChatPopup/ChatPopup';
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
-
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<Home />} />
         <Route path="/users" element={<UserList />} />
@@ -27,9 +27,9 @@ export default function AppRoutes() {
         <Route path="/ratings" element={<RatingList />} />
         <Route path="/ratings/edit/:id" element={<RatingForm />} />
         <Route path="/top" element={<TopList />} />
+        <Route path="/alerts" element={<ChatPopup />} />
         <Route path="/logout" element={<Logout />} />
       </Route>
-
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

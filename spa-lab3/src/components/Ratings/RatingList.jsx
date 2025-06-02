@@ -29,7 +29,7 @@ export default function RatingList() {
           if (!r) {
             const zeroSubjects = {};
             SUBJECTS.forEach(subj => {
-              zeroSubjects[subj] = { lab1:0, lab2:0, lab3:0, lab4:0, lab5:0, test:0 };
+              zeroSubjects[subj] = { lab1: 0, lab2: 0, lab3: 0, lab4: 0, lab5: 0, test: 0 };
             });
             r = await createRating({
               name: u.name,
@@ -41,13 +41,13 @@ export default function RatingList() {
             const s = r.subjects[subj];
             return s.lab1 + s.lab2 + s.lab3 + s.lab4 + s.lab5 + s.test;
           });
-          const avg = (totals.reduce((a,b) => a+b, 0) / SUBJECTS.length).toFixed(2);
+          const avg = (totals.reduce((a, b) => a + b, 0) / SUBJECTS.length).toFixed(2);
           return { id: r.id, name: r.name, group: r.group || '', avg };
         }));
         setRows(rr);
       } catch (e) {
         console.error(e);
-        alert('Ошибка при загрузке рейтингов: ' + e.message);
+        alert('Error loading ratings: ' + e.message);
       } finally {
         setLoading(false);
       }

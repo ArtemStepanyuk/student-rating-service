@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WS Test Client</title>
+  <script>
+    const getUniqueID = () => {
+      const s4 = () =>
+        Math.floor((1 + Math.random()) * 0x10000)
+          .toString(16)
+          .substring(1);
+      return s4() + s4() + '-' + s4();
+    };
+
+    let myId = '';
+    const socket = new WebSocket('ws://127.0.0.1:8081');
+
+    socket.addEventListener('open', () => {
+      myId = getUniqueID();
+      console.log('WebSocket opened, sending myId =', myId);
+      socket.send(myId);
+    });
+
+    socket.addEventListener('message', ({ data }) => {
+      alert('Received from server: ' + data);
+    });
+
+    const sendMsg = () => {
+      const msg = document.getElementById('msgInput').value;
+      fetch('/msg', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: myId, msg })
+      }).then(() => {
+        console.log('Message sent via HTTP POST:', msg);
+      });
+    };
+  </script>
+</head>
+<body>
+  <h1>WS Test Client</h1>
+  <input id="msgInput" type="text" placeholder="Enter message" />
+  <button onclick="sendMsg()">Send to myself</button>
+</body>
+</html>
