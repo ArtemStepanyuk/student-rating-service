@@ -1,0 +1,162 @@
+{
+  "users": [
+    { "id": "u001", "name": "Emma Johnson",      "role": "regular" },
+    { "id": "u002", "name": "Olivia Williams",   "role": "regular" },
+    { "id": "u003", "name": "Ava Brown",          "role": "regular" },
+    { "id": "u004", "name": "Charlotte Jones",   "role": "regular" },
+    { "id": "u005", "name": "Sophia Miller",     "role": "regular" },
+    { "id": "u006", "name": "Liam Smith",        "role": "regular" },
+    { "id": "u007", "name": "Noah Davis",        "role": "regular" },
+    { "id": "u008", "name": "Oliver Wilson",     "role": "regular" },
+    { "id": "u009", "name": "Elijah Taylor",     "role": "regular" },
+    { "id": "u010", "name": "James Anderson",    "role": "regular" },
+    { "id": "u011", "name": "Benjamin Thomas",   "role": "regular" },
+    { "id": "u012", "name": "Lucas Moore",       "role": "regular" }
+  ],
+  "ratings": [
+    {
+      "id": "r001",
+      "name": "Emma Johnson",
+      "group": "WD-01",
+      "subjects": {
+        "Mathematics":         { "lab1": 9, "lab2": 8, "lab3": 10, "lab4": 9, "lab5": 8, "test": 45 },
+        "Web Programming":     { "lab1": 10, "lab2": 9, "lab3": 9, "lab4": 10, "lab5": 9, "test": 48 },
+        "Project Management":  { "lab1": 8, "lab2": 8, "lab3": 7, "lab4": 9, "lab5": 8, "test": 42 },
+        "Computer Networks":   { "lab1": 9, "lab2": 9, "lab3": 10, "lab4": 8, "lab5": 9, "test": 46 },
+        "English":             { "lab1": 10, "lab2": 10, "lab3": 9, "lab4": 10, "lab5": 10, "test": 49 }
+      }
+    },
+    {
+      "id": "r002",
+      "name": "Olivia Williams",
+      "group": "WD-01",
+      "subjects": {
+        "Mathematics":         { "lab1": 7, "lab2": 8, "lab3": 7, "lab4": 8, "lab5": 7, "test": 38 },
+        "Web Programming":     { "lab1": 8, "lab2": 7, "lab3": 8, "lab4": 9, "lab5": 8, "test": 44 },
+        "Project Management":  { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 47 },
+        "Computer Networks":   { "lab1": 6, "lab2": 7, "lab3": 7, "lab4": 6, "lab5": 7, "test": 36 },
+        "English":             { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 45 }
+      }
+    },
+    {
+      "id": "r003",
+      "name": "Ava Brown",
+      "group": "WD-01",
+      "subjects": {
+        "Mathematics":         { "lab1": 10, "lab2": 10, "lab3": 9, "lab4": 10, "lab5": 10, "test": 50 },
+        "Web Programming":     { "lab1": 9, "lab2": 10, "lab3": 10, "lab4": 9, "lab5": 10, "test": 48 },
+        "Project Management":  { "lab1": 8, "lab2": 9, "lab3": 9, "lab4": 8, "lab5": 9, "test": 44 },
+        "Computer Networks":   { "lab1": 9, "lab2": 10, "lab3": 9, "lab4": 9, "lab5": 10, "test": 47 },
+        "English":             { "lab1": 10, "lab2": 10, "lab3": 10, "lab4": 10, "lab5": 10, "test": 50 }
+      }
+    },
+    {
+      "id": "r004",
+      "name": "Charlotte Jones",
+      "group": "WD-01",
+      "subjects": {
+        "Mathematics":         { "lab1": 8, "lab2": 7, "lab3": 8, "lab4": 7, "lab5": 8, "test": 40 },
+        "Web Programming":     { "lab1": 7, "lab2": 8, "lab3": 7, "lab4": 8, "lab5": 7, "test": 39 },
+        "Project Management":  { "lab1": 9, "lab2": 8, "lab3": 8, "lab4": 9, "lab5": 8, "test": 45 },
+        "Computer Networks":   { "lab1": 8, "lab2": 7, "lab3": 7, "lab4": 8, "lab5": 8, "test": 42 },
+        "English":             { "lab1": 9, "lab2": 9, "lab3": 9, "lab4": 9, "lab5": 9, "test": 46 }
+      }
+    },
+    {
+      "id": "r005",
+      "name": "Sophia Miller",
+      "group": "WD-01",
+      "subjects": {
+        "Mathematics":         { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 44 },
+        "Web Programming":     { "lab1": 10, "lab2": 9, "lab3": 9, "lab4": 10, "lab5": 9, "test": 49 },
+        "Project Management":  { "lab1": 8, "lab2": 7, "lab3": 8, "lab4": 8, "lab5": 7, "test": 41 },
+        "Computer Networks":   { "lab1": 9, "lab2": 8, "lab3": 9, "lab4": 9, "lab5": 8, "test": 43 },
+        "English":             { "lab1": 10, "lab2": 10, "lab3": 9, "lab4": 10, "lab5": 10, "test": 48 }
+      }
+    },
+    {
+      "id": "r006",
+      "name": "Liam Smith",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 7, "lab2": 6, "lab3": 7, "lab4": 7, "lab5": 6, "test": 35 },
+        "Web Programming":     { "lab1": 6, "lab2": 7, "lab3": 6, "lab4": 7, "lab5": 7, "test": 37 },
+        "Project Management":  { "lab1": 7, "lab2": 7, "lab3": 6, "lab4": 7, "lab5": 7, "test": 38 },
+        "Computer Networks":   { "lab1": 6, "lab2": 5, "lab3": 6, "lab4": 6, "lab5": 5, "test": 32 },
+        "English":             { "lab1": 8, "lab2": 7, "lab3": 8, "lab4": 8, "lab5": 7, "test": 40 }
+      }
+    },
+    {
+      "id": "r007",
+      "name": "Noah Davis",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 8, "lab2": 8, "lab3": 7, "lab4": 8, "lab5": 8, "test": 42 },
+        "Web Programming":     { "lab1": 7, "lab2": 8, "lab3": 7, "lab4": 8, "lab5": 8, "test": 41 },
+        "Project Management":  { "lab1": 9, "lab2": 8, "lab3": 9, "lab4": 9, "lab5": 8, "test": 45 },
+        "Computer Networks":   { "lab1": 7, "lab2": 7, "lab3": 7, "lab4": 7, "lab5": 7, "test": 39 },
+        "English":             { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 44 }
+      }
+    },
+    {
+      "id": "r008",
+      "name": "Oliver Wilson",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 46 },
+        "Web Programming":     { "lab1": 10, "lab2": 9, "lab3": 10, "lab4": 10, "lab5": 9, "test": 49 },
+        "Project Management":  { "lab1": 8, "lab2": 8, "lab3": 8, "lab4": 8, "lab5": 8, "test": 42 },
+        "Computer Networks":   { "lab1": 9, "lab2": 9, "lab3": 9, "lab4": 9, "lab5": 9, "test": 47 },
+        "English":             { "lab1": 9, "lab2": 9, "lab3": 9, "lab4": 9, "lab5": 9, "test": 45 }
+      }
+    },
+    {
+      "id": "r009",
+      "name": "Elijah Taylor",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 6, "lab2": 7, "lab3": 6, "lab4": 7, "lab5": 6, "test": 34 },
+        "Web Programming":     { "lab1": 7, "lab2": 6, "lab3": 7, "lab4": 7, "lab5": 6, "test": 36 },
+        "Project Management":  { "lab1": 6, "lab2": 7, "lab3": 6, "lab4": 6, "lab5": 7, "test": 35 },
+        "Computer Networks":   { "lab1": 7, "lab2": 6, "lab3": 7, "lab4": 6, "lab5": 6, "test": 33 },
+        "English":             { "lab1": 8, "lab2": 8, "lab3": 7, "lab4": 8, "lab5": 8, "test": 42 }
+      }
+    },
+    {
+      "id": "r010",
+      "name": "James Anderson",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 8, "lab2": 8, "lab3": 9, "lab4": 8, "lab5": 8, "test": 43 },
+        "Web Programming":     { "lab1": 9, "lab2": 9, "lab3": 8, "lab4": 9, "lab5": 9, "test": 47 },
+        "Project Management":  { "lab1": 9, "lab2": 8, "lab3": 9, "lab4": 9, "lab5": 8, "test": 46 },
+        "Computer Networks":   { "lab1": 8, "lab2": 8, "lab3": 8, "lab4": 8, "lab5": 8, "test": 44 },
+        "English":             { "lab1": 9, "lab2": 10, "lab3": 9, "lab4": 9, "lab5": 10, "test": 48 }
+      }
+    },
+    {
+      "id": "r011",
+      "name": "Benjamin Thomas",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 7, "lab2": 7, "lab3": 8, "lab4": 7, "lab5": 7, "test": 39 },
+        "Web Programming":     { "lab1": 8, "lab2": 7, "lab3": 8, "lab4": 8, "lab5": 7, "test": 41 },
+        "Project Management":  { "lab1": 7, "lab2": 8, "lab3": 7, "lab4": 7, "lab5": 8, "test": 40 },
+        "Computer Networks":   { "lab1": 7, "lab2": 7, "lab3": 7, "lab4": 7, "lab5": 7, "test": 38 },
+        "English":             { "lab1": 8, "lab2": 8, "lab3": 8, "lab4": 8, "lab5": 8, "test": 44 }
+      }
+    },
+    {
+      "id": "r012",
+      "name": "Lucas Moore",
+      "group": "WD-02",
+      "subjects": {
+        "Mathematics":         { "lab1": 9, "lab2": 8, "lab3": 9, "lab4": 9, "lab5": 8, "test": 45 },
+        "Web Programming":     { "lab1": 10, "lab2": 10, "lab3": 9, "lab4": 10, "lab5": 9, "test": 49 },
+        "Project Management":  { "lab1": 8, "lab2": 9, "lab3": 8, "lab4": 8, "lab5": 9, "test": 43 },
+        "Computer Networks":   { "lab1": 9, "lab2": 9, "lab3": 9, "lab4": 9, "lab5": 9, "test": 47 },
+        "English":             { "lab1": 10, "lab2": 10, "lab3": 10, "lab4": 10, "lab5": 10, "test": 50 }
+      }
+    }
+  ]
+}

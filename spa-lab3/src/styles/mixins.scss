@@ -1,0 +1,14 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-base {
+  @include flex-center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.2s;
+}

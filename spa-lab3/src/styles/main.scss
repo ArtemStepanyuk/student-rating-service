@@ -1,0 +1,127 @@
+@use "sass:color" as color;
+@use "variables" as *;
+@use "mixins"    as *;
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  background: linear-gradient(
+    to bottom,
+    #a0d8ff 0%,
+    #e0f8ff 50%,
+    #ffffff 100%
+  ) no-repeat fixed;
+  background-size: cover;
+  color: $color-primary;
+}
+
+h1, h2 {
+  margin: 1rem 0;
+  color: $color-secondary;
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.site-nav {
+  @include flex-center;
+  gap: 1rem;
+  list-style: none;
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+    color: $color-primary;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $color-accent;
+      transition: width 0.2s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  @include button-base;
+  background-color: $color-primary;
+  color: #fff;
+
+  &:hover {
+    background-color: color.adjust($color-primary, $lightness: -10%);
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.5rem;
+    border: 1px solid color.adjust($color-bg, $lightness: -20%);
+    text-align: left;
+  }
+}
+
+.auth-form,
+.form-create,
+.form-edit {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  select {
+    padding: 0.5rem;
+    border: 1px solid color.adjust($color-bg, $lightness: -30%);
+    border-radius: 0.25rem;
+  }
+
+  .error-text {
+    color: $color-accent;
+    font-size: 0.875rem;
+  }
+}
+
+.message-section,
+.confirm-section {
+  @include flex-center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    flex-direction: column;
+  }
+
+  .table,
+  ul.top-list {
+    font-size: 0.9rem;
+  }
+}
